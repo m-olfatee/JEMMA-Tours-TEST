@@ -1,0 +1,23 @@
+header.header
+    .navbar
+        .navbar__logo
+            a(href='/')
+                img.nav-logo(src='/img/logo-final.svg' alt='logo')
+        if user 
+            ul.navbar__list
+                li.navbar__list--item
+                    a(href='/overview')  Tours 
+                li.navbar__list--item
+                    a.nav__el--logout Logout 
+                li.navbar__list--item
+                    a(href='/overview/me') 
+                        img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+                        span= user.name.split(" ")[0]
+        else 
+            ul.navbar__list
+                li.navbar__list--item
+                    a(href='/overview')  Tours 
+                li.navbar__list--item
+                    a(href='#')  contact
+                li.navbar__list--item
+                    a(href='/overview/login') login

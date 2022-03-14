@@ -1,0 +1,104 @@
+.lp-section-features {
+  padding: 20rem 2rem;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(123, 221, 189, 0.8)),
+      to(rgba(85, 197, 122, 0.8))
+    ),
+    url("../../img/hero-bkg5.svg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(123, 221, 189, 0.8),
+      rgba(85, 197, 122, 0.8)
+    ),
+    url("../../img/hero-bkg5.svg");
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+  margin: 10rem 0;
+  color: var(--black);
+}
+
+.lp-section-features > * {
+  -webkit-transform: skewY(7deg);
+  transform: skewY(7deg);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .lp-section-features {
+    padding: 10rem 0;
+  }
+}
+
+.lp-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  /* border: 3px solid red; */
+}
+.lp-feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 6rem;
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+@media only screen and (max-width: 68.5em) {
+  .lp-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    gap: 4rem;
+  }
+  .lp-feature-box {
+    padding: 6rem 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .lp-section-grid {
+    grid-template-columns: 1fr;
+  }
+  .lp-feature-box {
+    padding: 6rem;
+  }
+}
+
+.lp-feature-box__icon {
+  max-width: 12rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(126, 213, 111)),
+    to(#28b485)
+  );
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .lp-feature-box__icon {
+    margin-bottom: 0;
+  }
+}
+
+.lp-feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03);
+}
