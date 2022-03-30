@@ -1,40 +1,29 @@
 :root {
   --section-rotate: 9vw;
-
-  /* ============== COLORS */
   --primary: #55c57a;
   --primary-light: #79dcbb;
   --primary-dark: #28b485;
-
   --secondary-light: #f8a87d;
   --secondary-dark: #ff7730;
-
   --tertiary-light: #77bff7;
   --tertiary-dark: #5643fa;
-
   --grey-light-1: #fcfcfc;
   --grey-light-2: #eee;
-
   --grey-dark: #777;
   --grey-dark-2: #999;
-
   --white: #f5f5f5;
   --black: #28262c;
-
   --bkg-shadow-white: rgba(238, 238, 238, 0.205);
   --bkg-shadow-black: rgba(40, 38, 44, 0.31);
   --bkg-shadow-green: #7bddbc44;
   --bkg-shadow-blue: rgba(119, 192, 247, 0.294);
-
-  /* ================ FONT */
   --default-font-size: 1.6rem;
-
-  /* ================= GRID */
   --grid-width: 114rem;
   --gutter-vertical: 8rem;
   --gutter-vertical-small: 6rem;
   --gutter-horizontal: 6rem;
 }
+
 *,
 *::before,
 *::after {

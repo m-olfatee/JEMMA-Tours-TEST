@@ -1,0 +1,16 @@
+NODE_ENV=development
+PORT=3000
+DATABASE= MongoDB server link
+DATABASE_PASSWORD= MongoDB password
+JWT_SECRET=my-super-long-and-super-secret-with-32-charachter-secret
+JWT_EXPIRES_IN=90d
+JWT_COOKIE_EXPIRES_IN=90
+EMAIL_USERNAME=Mailtrap username
+EMAIL_PASSWORD=Mailtrap Password 
+EMAIL_HOST=smtp.mailtrap.io
+EMAIL_PORT=25
+EMAIL_FROM=service@jemma.com
+SENDGRID_USERNAME= Sendgrid Username
+SENDGRID_PASSWORD=Sendgrid Password
+SENDGRID_FROM= Sendgrid Sender email
+STRIPE_SECRET_KEY= Stripe secret key

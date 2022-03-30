@@ -1,10 +1,18 @@
 .card-container {
   max-width: 120rem;
+  /* min-height: 70vh; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 7rem;
-  /* background-color: var(--white); */
+}
+
+.card-container:first-child {
+  margin-top: 5rem;
+}
+
+.card-container:last-child {
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -12,11 +20,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media only screen and (max-width: 37.5em) {
   .card-container {
     grid-template-columns: 1fr;
   }
 }
+
 .card-container .card {
   border-radius: 3px;
   overflow: hidden;
@@ -35,21 +45,25 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .card-container .card__header {
   position: relative;
 }
+
 .card-container .card__picture {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
   clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
   height: 22rem;
 }
+
 .card-container .card__picture-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0.4;
 }
+
 .card-container .card__picture-overlay-orange {
   background-image: -webkit-gradient(
     linear,
@@ -64,6 +78,7 @@
     var(--secondary-dark)
   );
 }
+
 .card-container .card__picture-overlay-blue {
   background-image: -webkit-gradient(
     linear,
@@ -78,6 +93,7 @@
     var(--tertiary-dark)
   );
 }
+
 .card-container .card__picture-overlay-green {
   background-image: -webkit-gradient(
     linear,
@@ -138,7 +154,7 @@
     rgba(86, 67, 250, 0.85)
   );
 }
-/* (edited)  */
+
 .card-container .card__picture-img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -146,11 +162,13 @@
   height: 100%;
   width: 100%;
 }
+
 @media only screen and (max-width: 37.5em) {
   .card-container .card__picture-img {
     object-position: center;
   }
 }
+
 .card-container .card__details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,12 +176,14 @@
   grid-column-gap: 2rem;
   padding: 2.5rem 3rem;
 }
+
 .card-container .card__sub-heading {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
   grid-column: 1 / -1;
 }
+
 .card-container .card__text {
   grid-column: 1 / -1;
   font-size: 1.5rem;
@@ -171,6 +191,7 @@
   margin-top: -1rem;
   margin-bottom: 0.75rem;
 }
+
 .card-container .card__data {
   font-size: 1.3rem;
   display: -webkit-box;
@@ -180,14 +201,17 @@
   -ms-flex-align: center;
   align-items: center;
 }
+
 .card-container .card__data svg {
   margin-right: 0.7rem;
 }
+
 .card-container .card__icon {
   height: 2rem;
   width: 2rem;
   fill: #55c57a;
 }
+
 .card-container .card__footer {
   background-color: #f7f7f7;
   padding: 2.5rem 3rem;
@@ -199,15 +223,19 @@
   grid-row-gap: 1rem;
   margin-top: auto;
 }
+
 .card-container .card__footer-value {
   font-weight: 700;
 }
+
 .card-container .card__footer-text {
   color: #999;
 }
+
 .card-container .card__ratings {
   grid-row: 2 / 3;
 }
+
 .card-container .card .btn-small,
 .card-container .card .btn {
   grid-row: 1 / 3;
@@ -225,6 +253,7 @@
   max-width: 80rem;
   text-align: center;
 }
+
 .error__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,25 +266,39 @@
   justify-content: center;
   margin-bottom: 1rem;
 }
+
 .error__emoji {
   font-size: 3.75rem;
   margin-left: 1rem;
 }
+
 .error__msg {
   font-size: 2.5rem;
   font-weight: 700;
   max-width: 50rem;
   margin: 0 auto;
 }
+.section-login {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
 
+  
+}
 .login-form {
-  margin: 0 auto;
-  max-width: 55rem;
+  margin: 5rem auto;
+  width: 50%;
   background-color: #fff;
   -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  padding: 5rem 7rem;
+  padding: 2rem 3rem;
   border-radius: 5px;
+}
+@media  (max-width: 56.25em){
+  .login-form {
+    width: 85%;
+    margin-top:10rem;
+  }
 }
 
 .form__input {
@@ -275,16 +318,17 @@
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* Pseudo element (a visible thing that isn't really in the DOM).
-      Also needs -ms- */
 }
+
 .form__input:focus {
   outline: none;
   border-bottom: 3px solid #55c57a;
 }
+
 .form__input:focus:invalid {
   border-bottom: 3px solid #ff7730;
 }
+
 .form__input::-webkit-input-placeholder {
   color: #bbb;
 }
@@ -341,6 +385,7 @@
   transition: all 0.2s;
   cursor: pointer;
 }
+
 .form__upload + label:hover {
   background-color: #55c57a;
   color: #fff;
@@ -348,4 +393,26 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
+}
+
+.signup-link {
+  font-size: 1.6rem;
+  color: var(--black);
+  font-weight: 600;
+  padding: 2rem 1rem;
+  letter-spacing:1px;
+}
+.signup-link a,
+.signup-link a:active,
+.signup-link a:visited {
+  background-color: var(--primary-light);
+  padding: 1rem 1.5rem;
+  color: var(--black);
+  text-decoration: none;
+  font: 1.4rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  line-height: 1.7;
+  padding: 1rem 1.5rem !important;
+  margin-left: .5rem;
 }

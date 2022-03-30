@@ -3,6 +3,7 @@
 @import url("./sub/header.css");
 @import url("./sub/hero.css");
 @import url("./sub/about.css");
+@import url("./sub/aboutUs.css");
 @import url("./sub/features.css");
 @import url("./sub/tours.css");
 @import url("./sub/stories.css");
@@ -10,30 +11,4 @@
 @import url("./sub/tour-detail.css");
 @import url("./sub/account-view.css");
 @import url("./sub/overview.css");
-
-/* ==================================================== */
-/* =================== HEADER  & NAVBAR STYLES =========== */
-/* ==================================================== */
-
-/* =================== HERO SECTION STYLES ===========*/
-
-/* ================================================*/
-/* ================= ABOUT SECTION STYLES ===========*/
-
-/* ============================================= */
-/* ================ SECTION FEATURES =========== */
-
-/* ===================================== */
-/* ========= SECTION TOURS STYLES ========= */
-
-/* ======================================= */
-/* ============== STORIES SECTION STYLES ========== */
-
-/* ============== TOURS PAGE ====================  */
-
-/* ================= ADDED CSS =================== */
-
-/* ===================================================================== */
-
-/* ======================================= */
-/* ========== FOOTER STYLES ============== */
+@import url("./sub/contact.css");

@@ -2,11 +2,8 @@
   position: relative;
   padding: 10rem 3rem;
   margin: 15rem 0;
-
-  /* max-height: 100vh; */
   position: relative;
   letter-spacing: 1px;
-  /* box-shadow: 0.3rem 0.3rem 1.5rem var(--grey-dark); */
   background-color: var(--bkg-shadow-green);
   transform: skewY(-7deg);
 }
@@ -21,14 +18,15 @@
   color: var(--black);
   background-color: var(--primary-light);
 }
+
 .lp-section-tours .btn--tours {
   position: absolute;
-  /* bottom: 5%; */
   right: 50%;
   transform: translate(50%, -50%) skewY(7deg);
   text-align: center;
   box-shadow: 0.3rem 0.3rem 1.5rem var(--grey-dark);
 }
+
 @media only screen and (max-width: 37.5em) {
   .lp-section-tours .btn--tours {
     bottom: 0;
@@ -37,6 +35,7 @@
     width: 100%;
   }
 }
+
 .lp-section-tours .card {
   -webkit-perspective: 150rem;
   perspective: 150rem;

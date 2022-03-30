@@ -7,3 +7,21 @@ block content
         include _sectionFeatures
         include _sectionTours
         include _sectionStories
+        section#contact.section-contact
+            .row
+                .contact
+                .contact__form
+                    form.form(action='#')
+                    .u-margin-bottom-medium
+                        h2#contact-heading.heading-secondary Contact us
+                    .form__group
+                        input#name.contact-form__input(type='text' placeholder='Name' required='')
+                        label.form__label(for='name') Name
+                    .form__group
+                        input#email.contact-form__input(type='email' placeholder='Email address' required='')
+                        label.form__label(for='email') Email address
+                    .form__group
+                        label.form__label(for='message') Message
+                        textarea#message.contact-form__textarea(rows='10' cols='100' placeholder='Message' required='')
+                    .form__group
+                        button.btn.btn--green Send

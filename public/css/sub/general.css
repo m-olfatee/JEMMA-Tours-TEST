@@ -28,7 +28,6 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--black);
   background-color: var(--grey-light-1);
-  /* padding: 3rem; */
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +70,7 @@ body {
     transform: translate(0);
   }
 }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -151,6 +151,7 @@ body {
 main {
   position: relative;
   width: 90%;
+  min-height: 75vh;
   margin: 0 auto;
   margin-bottom: 5rem;
   background-color: var(--grey-light-2);
@@ -160,9 +161,6 @@ main {
     width: 100%;
   }
 }
-
-/* ================= */
-/* General Layout */
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
@@ -339,26 +337,12 @@ main {
 }
 
 .heading-secondary {
+  color: var(--primary);
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1rem;
+  padding: 1rem 0;
   display: inline-block;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#7bddbd),
-    to(#28b485)
-  );
-
-  background-image: linear-gradient(
-    to right,
-    var(--primary-light),
-    var(--primary)
-  );
-  -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -390,23 +374,16 @@ main {
   font-size: 3.5rem;
 }
 
-/* ============== */
-/* Typography */
 .lp-heading-primary {
   color: var(--black);
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* margin-bottom: 6rem; */
   padding: 3rem 4rem;
-  /* background-color: var(--bkg-shadow-green); */
-
   border-radius: 1rem;
   min-width: 50rem;
 }
 
-/* =============== 
-Typography/Headers */
 .heading-primary--main {
   display: block;
   font-size: 5rem;
@@ -422,17 +399,15 @@ Typography/Headers */
 }
 
 @media only screen and (max-width: 37.5em) {
-  .lp-heading-primary {
-  }
   .heading-primary--main {
     letter-spacing: 1rem;
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
 .heading-primary--sub {
   display: block;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 500;
   letter-spacing: 1rem;
   margin-top: 3rem;
@@ -488,21 +463,17 @@ Typography/Headers */
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.2s; 
   position: relative;
   font-size: 1.6rem;
   font-weight: 700;
-
   border: none;
   cursor: pointer;
-  /* margin-top: 4rem; */
-
-  /* max-width: 50%; */
   color: var(--black);
 }
 

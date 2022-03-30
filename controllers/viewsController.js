@@ -4,6 +4,18 @@ const Booking = require("../models/bookingModel")
 const AppError = require("../utils/appError")
 const catchAsync = require("../utils/catchAsync")
 
+exports.getHome = catchAsync(async (req, res) => {
+    res.status(200).render("home", {
+        title: "Home"
+    })
+})
+
+exports.getAbout = catchAsync(async (req, res) => {
+    res.status(200).render("about", {
+        title: "About us"
+    })
+})
+
 exports.getOverview = catchAsync(async (req, res) => {
     // 1) get tour data from collection
     const tours = await Tour.find()

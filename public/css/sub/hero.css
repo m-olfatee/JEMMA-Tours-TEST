@@ -35,24 +35,24 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
-  /* background-color: var(--bkg-shadow-green); */
   border-radius: 1rem;
 }
 
 .lp-hero .heading-primary {
-  /* box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); */
   height: 80%;
+  width: 90% !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bkg-shadow-white);
-  /* color: var(--white) */
+  padding: 0;
 }
+
 .lp-hero .heading-primary--sub {
   font-weight: 700;
 }
+
 @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
   (-webkit-clip-path: polygon(0 0)) {
   .lp-hero {
@@ -90,6 +90,7 @@
     height: 60%;
   }
 }
+
 .lp-hero .btn--green {
   width: 55%;
   position: absolute;
